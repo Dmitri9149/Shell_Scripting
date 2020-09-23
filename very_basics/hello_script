@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# the  script
+
+echo "Hello Scripts from Cloudy World!"
