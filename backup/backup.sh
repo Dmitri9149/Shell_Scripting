@@ -5,7 +5,7 @@
 # later we will change to more general functionality
 
 user=$(whoami)
-date=/home/${user}/idris
+input=/home/${user}/idris/
 output=/tmp/${user}_home_$(date +%Y-%m-%d_%H%M%S).tar.gz
 
 tar -czf ${output} ${input}
