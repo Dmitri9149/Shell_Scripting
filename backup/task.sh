@@ -4,3 +4,4 @@ cal
 pwd
 whoami
 ls
+cd ..
