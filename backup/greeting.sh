@@ -2,7 +2,7 @@
 
 greeting="Welcome"
 user=$(whoami)
-day=$(date +%A)
+day=$(date )
 folder=$(pwd)
 
 echo "$greeting back $user! Today is $day and you are working in $folder ."
