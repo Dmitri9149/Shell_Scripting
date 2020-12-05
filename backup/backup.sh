@@ -1,3 +1,3 @@
 #!/bin/bash
 
-tar -czf /tmp/myhome_directory.tar.gz /home/dmitri
+tar -czf /tmp/myhome_directory.tar.gz /home/dmitri/idris
