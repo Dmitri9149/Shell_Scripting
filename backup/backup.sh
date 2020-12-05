@@ -5,10 +5,10 @@
 # later we will change to more general functionality
 
 user=$(whoami)
-input=/home/${user}/idris/
+input=/home/$user/idris/
 output=/tmp/${user}_home_$(date +%Y-%m-%d_%H%M%S).tar.gz
 
-tar -czf ${output} ${input}
+tar -czf $output $input
 
 echo "Backup of $input completed! Details about the output backup file:"
 ls -l $output
