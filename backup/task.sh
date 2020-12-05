@@ -1,6 +1,6 @@
 #!/bin/bash
 date
-call
+cal
 pwd
 whoami
 ls
