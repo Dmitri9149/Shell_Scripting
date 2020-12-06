@@ -1,11 +1,23 @@
 #!/bin/bash
 
-# This bash script is used to backup a user's /home/idrisdirectory 
-# to /tmp/.  (if the user has the idris directory, of course)
-# later we will change to more general functionality
+# This bash script is used to backup a user's /home/.. directory 
+# to /tmp/. 
 
 user=$(whoami)
-input=/home/$user/idris/
+
+if [ -z $1 ]; then                                                                                                                                                                                                                                                             
+        echo "No parameters."
+        exit 1                                                                                                                                                                                                                                                         
+else                                                                                                                                                                                                                                                                           
+        if [ ! -d "/home/$user/$1" ]; then                                                                                                                                                                                                                                           
+                echo "Requested /home/$user/$1 user home directory doesn't exist."                                                                                                                                                                                                         
+                exit 1                                                                                                                                                                                                                                                         
+        fi                                                                                                                                                                                                                                                                     
+        user=$(whoami)                                                                                                                                                                                                                                                               
+fi 
+
+user=$(whoami)
+input=/home/$user/$1
 output=/tmp/${user}_home_$(date +%Y-%m-%d_%H%M%S).tar.gz
 
 ## Reports a total number of files in directory
