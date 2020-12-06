@@ -1,0 +1,2 @@
+The imput from keyboard will rewrite the file, 
+press CTRL + D to terminate input 
